@@ -289,18 +289,6 @@ public class GivenWhenThenStandardNameGeneratorCsTest {
     }
 
     @Test
-    public void givenTwoSecretShareWithSameContent_whenCompareEqual_thenMatch(TestInfo info) {
-        assertThat(info.getDisplayName()).isEqualTo("given two secret share with same content, "
-                + "when $0 == $1, match");
-    }
-
-    @Test
-    public void givenTwoSecretShareWithSameContentWhenCompareEqualThenMatch(TestInfo info) {
-        assertThat(info.getDisplayName()).isEqualTo("given two secret share with same content, "
-                + "when $0 == $1, match");
-    }
-
-    @Test
     public void givenDataOfVariableButValidLength_whenBuildSecretShare_thenSucceed(TestInfo info) {
         assertThat(info.getDisplayName()).isEqualTo("given data of variable but valid length, "
                 + "when build secret share, succeed");
